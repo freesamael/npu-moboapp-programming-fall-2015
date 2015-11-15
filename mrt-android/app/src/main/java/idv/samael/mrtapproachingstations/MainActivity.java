@@ -7,8 +7,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
+
+import java.util.List;
 
 import retrofit.Call;
 import retrofit.Callback;
@@ -71,17 +74,24 @@ public class MainActivity extends AppCompatActivity {
         trainsCall.enqueue(new Callback<ApproachingTrains>() {
             @Override
             public void onResponse(Response<ApproachingTrains> response, Retrofit retrofit) {
-
-                // Fill the list view.
-                for (ApproachingTrains.TrainInfo trainInfo : response.body().result.results) {
-                    mAdapter.getItems().add(trainInfo);
+                ApproachingTrains responseBody;
+                ApproachingTrains.ApproachingTrainsResult resultObject;
+                List<ApproachingTrains.TrainInfo> trainInfoList;
+                if ((responseBody = response.body()) != null &&
+                        (resultObject = responseBody.result) != null &&
+                        (trainInfoList = resultObject.results) != null) {
+                    // Fill the list view.
+                    for (ApproachingTrains.TrainInfo trainInfo : response.body().result.results) {
+                        mAdapter.getItems().add(trainInfo);
+                    }
+                    mAdapter.notifyDataSetChanged();
                 }
-                mAdapter.notifyDataSetChanged();
             }
 
             @Override
             public void onFailure(Throwable t) {
                 Log.e("Data.Taipei", t.getMessage(), t);
+                Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
