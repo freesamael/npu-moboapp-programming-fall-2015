@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by freesamael on 11/15/15.
+ * Adapter for binding {@link idv.samael.mrtapproachingstations.ApproachingTrains.TrainInfo}.
  */
 public class TrainInfoAdapter extends BaseAdapter {
     private Context mContext;

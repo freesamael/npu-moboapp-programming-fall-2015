@@ -66,13 +66,14 @@ public class MainActivity extends AppCompatActivity {
         mAdapter.getItems().clear();
         mAdapter.notifyDataSetChanged();
 
+        // Update train info.
         Call<ApproachingTrains> trainsCall = mService.listApproachingTrains();
         trainsCall.enqueue(new Callback<ApproachingTrains>() {
             @Override
             public void onResponse(Response<ApproachingTrains> response, Retrofit retrofit) {
+
+                // Fill the list view.
                 for (ApproachingTrains.TrainInfo trainInfo : response.body().result.results) {
-                    Gson gson = new Gson();
-                    Log.d("Data.Taipei", gson.toJson(trainInfo));
                     mAdapter.getItems().add(trainInfo);
                 }
                 mAdapter.notifyDataSetChanged();

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 /**
- * Created by freesamael on 11/14/15.
+ * POJO mapping of train info json objects
  */
 public class ApproachingTrains {
     public static class TrainInfo {
