@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <!-- gaia building blocks -->
+    <link rel="stylesheet" type="text/css" href="bower_components/gaia-fonts/style.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/gaia-theme/gaia-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/gaia-icons/gaia-icons.css"/>
+    <script src="bower_components/gaia-component/gaia-component.js"></script>
+    <script src="bower_components/gaia-theme/lib/gaia-theme-selector.js"></script>
+    <script src="bower_components/gaia-icons/gaia-icons.js"></script>
+    <script src="bower_components/font-fit/font-fit.js"></script>
+    <script src="bower_components/gaia-header/gaia-header.js"></script>
+    <script src="bower_components/gaia-list/gaia-list.js"></script>
+    <title>UBike</title>
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+    so we use a script file. -->
+    <script src="app.js" defer></script>
+  </head>
+  <body class="theme-settings">
+    <gaia-header>
+      <h1 style="margin-right: 0px; margin-left: 0px; font-size: 24px;">UBike</h1>
+      <button data-icon="sync" aria-hidden="true" onclick="sync()"></button>
+      <style scoped="">gaia-header {
+      display: block;
+      --gaia-header-button-color:
+      var(--header-button-color,
+      var(--header-color,
+      var(--link-color,
+      inherit)));
+      }gaia-header[hidden] {
+      display: none;
+      }gaia-header .l10n-action {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+      }gaia-header h1 {
+      flex: 1;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-align: center;
+      line-height: 50px; /* 1 */
+      font-weight: 300;
+      font-style: italic;
+      font-size: 24px;
+      color:
+      var(--header-title-color,
+      var(--header-color,
+      var(--title-color,
+      var(--text-color,
+      inherit))));
+      }gaia-header h1.flush-left {
+      padding-left: 10px;
+      }gaia-header h1.flush-right {
+      padding-right: 10px; /* 1 */
+      }gaia-header a,
+      gaia-header button {
+      box-sizing: border-box;
+      display: flex;
+      border: none;
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 1;
+      min-width: 50px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-align: center;
+      background: none;
+      border-radius: 0;
+      font-style: italic;
+      cursor: pointer;
+      transition: opacity 200ms 280ms;
+      color:
+      var(--gaia-header-button-color);
+      }gaia-header a:active,
+      gaia-header button:active {
+      transition: none;
+      opacity: 0.2;
+      }gaia-header a[hidden],
+      gaia-header button[hidden] {
+      display: none;
+      }gaia-header a[disabled],
+      gaia-header button[disabled] {
+      pointer-events: none;
+      color: var(--header-disabled-button-color);
+      }gaia-header .icon,
+      gaia-header [data-icon] {
+      color:
+      var(--header-icon-color,
+      var(--gaia-header-button-color));
+    }</style></gaia-header>
+    <gaia-list id="ubike-list" />
+    </body>
+  </html>
