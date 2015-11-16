@@ -50,17 +50,17 @@ public class TrainInfoAdapter extends BaseAdapter {
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.list_item_mrt, null);
+        }
 
-            TextView station = (TextView) convertView.findViewById(R.id.text_station);
-            TextView destination = (TextView) convertView.findViewById(R.id.text_destination);
-            if (station != null) {
-                station.setText(String.format(mContext.getString(R.string.fmt_text_station),
-                        getItem(position).station));
-            }
-            if (destination != null) {
-                destination.setText(String.format(mContext.getString(R.string.fmt_text_destination),
-                        getItem(position).destination));
-            }
+        TextView station = (TextView) convertView.findViewById(R.id.text_station);
+        TextView destination = (TextView) convertView.findViewById(R.id.text_destination);
+        if (station != null) {
+            station.setText(String.format(mContext.getString(R.string.fmt_text_station),
+                    getItem(position).station));
+        }
+        if (destination != null) {
+            destination.setText(String.format(mContext.getString(R.string.fmt_text_destination),
+                    getItem(position).destination));
         }
 
         return convertView;
