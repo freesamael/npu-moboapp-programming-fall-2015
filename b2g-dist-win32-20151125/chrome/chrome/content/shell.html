@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/.  -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      id="shell"
+      windowtype="navigator:browser"
+      >
+
+<head>
+  <link rel="stylesheet" href="shell.css" type="text/css">
+  <script type="text/javascript">
+  <!-- Add raptor performance marker -->
+  window.performance.mark('gecko-shell-html-load');
+  </script>
+  <script type="application/javascript;version=1.8"
+          src="chrome://b2g/content/settings.js"> </script>
+  <script type="application/javascript;version=1.8"
+          src="chrome://b2g/content/shell.js"> </script>
+
+  <!-- various task that has to happen only on desktop -->
+  <script type="application/javascript;version=1.8"
+          src="chrome://b2g/content/desktop.js"> </script>
+  <!-- this script handles the screen argument for desktop builds -->
+  <script type="application/javascript;version=1.8"
+          src="chrome://b2g/content/screen.js"> </script>
+  <!-- this script handles the "runapp" argument for desktop builds -->
+  <script type="application/javascript;version=1.8"
+          src="chrome://b2g/content/runapp.js"> </script>
+  <!-- manages DevTools server state -->
+  <script type="application/javascript;version=1.8"
+          src="chrome://b2g/content/devtools/debugger.js"> </script>
+</head>
+  <body id="container">
+    <!-- The html:iframe containing the UI is created here. -->
+  </body>
+</html>
