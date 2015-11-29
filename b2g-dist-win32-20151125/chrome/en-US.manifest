@@ -1,0 +1,41 @@
+locale alerts en-US en-US/locale/en-US/alerts/
+locale autoconfig en-US en-US/locale/en-US/autoconfig/
+locale b2g-l10n en-US en-US/locale/en-US/b2g-l10n/
+locale branding en-US en-US/locale/branding/
+locale cookie en-US en-US/locale/en-US/cookie/
+locale devtools-shared en-US en-US/locale/en-US/devtools/shared/
+locale formautofill en-US en-US/locale/en-US/formautofill/
+locale global en-US en-US/locale/en-US/global/
+locale global-platform en-US en-US/locale/en-US/global-platform/
+locale global-region en-US en-US/locale/en-US/global-region/
+locale mozapps en-US en-US/locale/en-US/mozapps/
+locale necko en-US en-US/locale/en-US/necko/
+locale passwordmgr en-US en-US/locale/en-US/passwordmgr/
+locale pipnss en-US en-US/locale/en-US/pipnss/
+locale pippki en-US en-US/locale/en-US/pippki/
+locale places en-US en-US/locale/en-US/places/
+locale pluginproblem en-US en-US/locale/en-US/pluginproblem/
+override chrome://global/locale/AccessFu.properties chrome://b2g-l10n/locale/overrides/AccessFu.properties
+override chrome://global/locale/about.dtd chrome://b2g-l10n/locale/overrides/about.dtd
+override chrome://global/locale/aboutAbout.dtd chrome://b2g-l10n/locale/overrides/aboutAbout.dtd
+override chrome://global/locale/aboutCertError.dtd     chrome://b2g-l10n/locale/aboutCertError.dtd
+override chrome://global/locale/aboutRights.dtd chrome://b2g-l10n/locale/overrides/aboutRights.dtd
+override chrome://global/locale/aboutSupport.dtd chrome://b2g-l10n/locale/overrides/global/aboutSupport.dtd
+override chrome://global/locale/aboutSupport.properties chrome://b2g-l10n/locale/overrides/global/aboutSupport.properties
+override chrome://global/locale/aboutTelemetry.dtd chrome://b2g-l10n/locale/overrides/global/aboutTelemetry.dtd
+override chrome://global/locale/aboutTelemetry.properties chrome://b2g-l10n/locale/overrides/global/aboutTelemetry.properties
+override chrome://global/locale/aboutWebrtc.properties chrome://b2g-l10n/locale/overrides/global/aboutWebrtc.properties
+override chrome://global/locale/appstrings.properties  chrome://b2g-l10n/locale/appstrings.properties
+override chrome://global/locale/commonDialogs.properties chrome://b2g-l10n/locale/overrides/commonDialogs.properties
+override chrome://global/locale/crashes.dtd chrome://b2g-l10n/locale/overrides/crashreporter/crashes.dtd
+override chrome://global/locale/crashes.properties chrome://b2g-l10n/locale/overrides/crashreporter/crashes.properties
+override chrome://global/locale/dom/dom.properties chrome://b2g-l10n/locale/overrides/dom/dom.properties
+override chrome://global/locale/global.dtd chrome://b2g-l10n/locale/overrides/global.dtd
+override chrome://global/locale/intl.css chrome://b2g-l10n/locale/overrides/intl.css
+override chrome://global/locale/intl.properties chrome://b2g-l10n/locale/overrides/intl.properties
+override chrome://global/locale/mozilla.dtd chrome://b2g-l10n/locale/overrides/global/mozilla.dtd
+override chrome://global/locale/plugins.properties chrome://b2g-l10n/locale/overrides/plugins.properties
+override chrome://global/locale/search/search.properties chrome://b2g-l10n/locale/overrides/search/search.properties
+override chrome://mozapps/locale/handling/handling.properties chrome://b2g-l10n/locale/overrides/handling/handling.properties
+override chrome://mozapps/locale/update/updates.properties chrome://b2g-l10n/locale/overrides/update/updates.properties
+override chrome://passwordmgr/locale/passwordmgr.properties chrome://b2g-l10n/locale/overrides/passwordmgr/passwordmgr.properties

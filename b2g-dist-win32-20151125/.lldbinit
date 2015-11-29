@@ -1,0 +1,1 @@
+script topsrcdir = "c:/mozilla-source"; lldb.debugger.HandleCommand("command source -s true '%s'" % os.path.join(topsrcdir, ".lldbinit"))
