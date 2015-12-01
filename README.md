@@ -10,6 +10,10 @@
 # 作業繳交期限
 2015/12/11
 
+# 課程簡報
+- [開放資料](http://www.slideshare.net/freesamael/ss-55680778)
+- [Web 服務](http://www.slideshare.net/freesamael/web-55680792)
+
 # 教學評量
 本學期依照往例提供[教學問卷](https://docs.google.com/forms/d/1x-VsK447PPaVBmbhlUNKkiooeEGlFdXFdEzkTm8RXxU/viewform
 )，請同學盡量予以回饋。
