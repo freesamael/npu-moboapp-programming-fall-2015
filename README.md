@@ -1,6 +1,6 @@
 # 作業內容
 利用課堂上所提供之[範例程式](https://github.com/freesamael/npu-moboapp-programming-fall-2015)為基礎，撰寫一符合以下條件之 Android 或 Firefox OS App：
-- Firefox OS 或 Android App 擇一即可
+- Firefox OS 或 Android App 擇一即可。
 - 若為 Firefox OS App 需能在 Firefox OS Simulator 正常執行；Android 則需能於 Android Emulator 正常執行。
 - Firefox OS app 請將修改後之 ubike-fxos 目錄壓縮 zip 後繳交；Android app 請將 mrt-android 目錄壓縮後繳交。
 - 利用我國政府所提供之開放資料呈現於 App 中 (教學範例為 data.taipei，作業可使用任何中央部會或地方政府之開放資料平台)。
