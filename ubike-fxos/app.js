@@ -6,7 +6,7 @@ function sync() {
   document.getElementById("ubike-list").innerHTML = '';
   var xhr = new XMLHttpRequest();
   xhr.addEventListener("load", () => updateUBikeList(JSON.parse(xhr.responseText)));
-  xhr.open("GET", "http://data-taipei.blackbing.net/youbike");
+  xhr.open("GET", "http://data-taipei.herokuapp.com/youbike");
   xhr.send();  
 }
 
