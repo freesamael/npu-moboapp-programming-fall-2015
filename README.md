@@ -7,6 +7,9 @@
 - 範例程式中已經使用的 [Youbike](http://data.taipei/youbike) 及[捷運列車進站](http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=55ec6d6e-dc5c-4268-a725-d04cc262172b) API 不得作為作業繳交。
 - 介面呈現上可使用範例所撰寫的列表式，或用其他介面呈現。
 
+# Data.Taipei CORS Proxy
+若在 Firefox OS app 遇到 CORS　的問題，請將網址 http://data.taipei 改為 http://data-taipei.herokuapp.com
+
 # 作業繳交期限
 2015/12/11
 
